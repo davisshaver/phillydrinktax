@@ -130,20 +130,6 @@
 			this.ctrlNavDots = [].slice.call( this.ctrlNav.children );
 		}
 
-		// field number status
-		if( this.options.ctrlNavPosition ) {
-			this.ctrlFldStatus = createElement( 'span', { cName : 'fs-numbers', appendTo : this.ctrls } );
-
-			// current field placeholder
-			this.ctrlFldStatusCurr = createElement( 'span', { cName : 'fs-number-current', inner : Number( this.current + 1 ) } );
-			this.ctrlFldStatus.appendChild( this.ctrlFldStatusCurr );
-
-			// total fields placeholder
-			this.ctrlFldStatusTotal = createElement( 'span', { cName : 'fs-number-total', inner : this.fieldsCount } );
-			this.ctrlFldStatus.appendChild( this.ctrlFldStatusTotal );
-			this._showCtrl( this.ctrlFldStatus );
-		}
-
 		// progress bar
 		if( this.options.ctrlProgress ) {
 			this.ctrlProgress = createElement( 'div', { cName : 'fs-progress', appendTo : this.ctrls } );
@@ -289,7 +275,6 @@
 					self._hideCtrl( self.ctrlNav );
 					self._hideCtrl( self.ctrlProgress );
 					self._hideCtrl( self.ctrlContinue );
-					self._hideCtrl( self.ctrlFldStatus );
 					// replace class fs-form-full with fs-form-overview
 					classie.remove( self.formEl, 'fs-form-full' );
 					classie.add( self.formEl, 'fs-form-overview' );
@@ -299,12 +284,6 @@
 				}
 				else {
 					classie.remove( nextField, 'fs-show' );
-					
-					if( self.options.ctrlNavPosition ) {
-						self.ctrlFldStatusCurr.innerHTML = self.ctrlFldStatusNew.innerHTML;
-						self.ctrlFldStatus.removeChild( self.ctrlFldStatusNew );
-						classie.remove( self.ctrlFldStatus, 'fs-show-' + self.navdir );
-					}
 				}
 				self.isAnimating = false;
 			};
@@ -344,19 +323,6 @@
 	 */
 	FForm.prototype._updateFieldNumber = function() {
 		if( this.options.ctrlNavPosition ) {
-			// first, create next field number placeholder
-			this.ctrlFldStatusNew = document.createElement( 'span' );
-			this.ctrlFldStatusNew.className = 'fs-number-new';
-			this.ctrlFldStatusNew.innerHTML = Number( this.current + 1 );
-			
-			// insert it in the DOM
-			this.ctrlFldStatus.appendChild( this.ctrlFldStatusNew );
-			
-			// add class "fs-show-next" or "fs-show-prev" depending on the navigation direction
-			var self = this;
-			setTimeout( function() {
-				classie.add( self.ctrlFldStatus, self.navdir === 'next' ? 'fs-show-next' : 'fs-show-prev' );
-			}, 25 );
 		}
 	}
 

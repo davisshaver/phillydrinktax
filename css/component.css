@@ -60,9 +60,9 @@
 	display: block;
 	margin-bottom: 2.5em;
 	color: #3b3f45;
-	content: 'Calculate Your Impact';
+	content: 'Your annual contribution';
 	font-weight: 700;
-	font-size: 1.85em;
+	font-size: 1.4em;
 }
 
 /* Switch view animation (we hide the current view, switch the view class and show it again) */
@@ -467,7 +467,7 @@ button.fs-continue,
 
 .fs-nav-dots button {
 	position: relative;
-	display: block;
+	display: none;
 	padding: 0;
 	margin: 16px 0;
 	width: 16px;
@@ -804,15 +804,15 @@ input[type=text]::-ms-clear {
 		min-height: 500px;
 	}
 
-	.fs-form-wrap {
+	.fs-form-wrap li {
 		font-size: 70%;
 	}
 
 	.fs-form {
-		top: 6em;
+		top: 7em;
 		right: 2em;
 		left: 0;
-		padding: 0 3.75em 0 1em;
+		padding: 0 1.75em 0 1em;
 		width: auto;
 		font-size: 2em;
 	}
