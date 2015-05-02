@@ -291,7 +291,7 @@
 					var poison = $( "input:checked" )[0].value;
 					var quantity = $( "input:checked" )[1].value;
 					var markup = '<p>' + poison + '</p>' + '<p>' + quantity + '</p>';
-					$( markup ).insertBefore( "button.fs-submit" );
+					$( markup ).insertBefore( "a.fs-submit" );
 
 					_gaq.push(['_trackEvent', 'Survey', 'Contribution', 'Dollar amount']);
 					_gaq.push(['_trackEvent', 'Survey', 'Quantity', quantity]);
@@ -304,7 +304,7 @@
 					};
 					var querystring = EncodeQueryData(data);
 					var twitterurl = 'https://twitter.com/intent/tweet?' + querystring;
-					$("#submit").attr("href", twitterurl)
+					$("#submit").attr("href", twitterurl);
 					var utm;
 					var text;
 					var url;
