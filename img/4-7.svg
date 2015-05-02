@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+<font horiz-adv-x="2048">
+<!-- Menlo is a Trademark of Apple Inc. -->
+<!-- Copyright: Copyright 2015 Adobe System Incorporated. All rights reserved. -->
+<font-face font-family="Menlo-Regular" units-per-em="2048" underline-position="-130" underline-thickness="90"/>
+<missing-glyph horiz-adv-x="1233" d="M104,-362l0,1806l1024,0l0,-1806M219,-248l795,0l0,1577l-795,0z"/>
+<glyph unicode="-" horiz-adv-x="1233" d="M102,724l1060,0l0,-169l-1060,0z"/>
+<glyph unicode="4" horiz-adv-x="1233" d="M735,1309l-471,-789l471,0M702,1493l234,0l0,-973l199,0l0,-164l-199,0l0,-356l-201,0l0,356l-633,0l0,191z"/>
+<glyph unicode="7" horiz-adv-x="1233" d="M139,1493l940,0l0,-86l-534,-1407l-211,0l520,1323l-715,0z"/>
+</font>
+
+	<circle fill="#669940" cx="75" cy="75" r="73.6"/>
+<rect x="19" y="51.5" fill="none" width="112" height="47"/>
+<text transform="matrix(1 0 0 1 19 97.0879)" font-family="'Menlo-Regular'" font-size="60">4-7</text>
+</svg>

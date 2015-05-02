@@ -20,6 +20,12 @@
 	width: 100%;
 }
 
+@media screen and (min-width: 500px ) {
+	.fs-title p {
+
+	}
+}
+
 .fs-title h1 {
 	margin: 0;
 }
@@ -347,16 +353,28 @@ button.fs-continue,
 	transform: translate(-50%,-50%);
 }
 
-.fs-fields .fs-radio-custom label.radio-mobile::after {
-	background-image: url(../img/mobile.svg);
+.fs-fields .fs-radio-custom label.radio-liquor::after {
+	background-image: url(../img/liquor.svg);
 }
 
-.fs-fields .fs-radio-custom label.radio-social::after {
-	background-image: url(../img/social.svg);
+.fs-fields .fs-radio-custom label.radio-wine::after {
+	background-image: url(../img/wine.svg);
 }
 
-.fs-fields .fs-radio-custom label.radio-conversion::after {
-	background-image: url(../img/conversion.svg);
+.fs-fields .fs-radio-custom label.radio-beer::after {
+	background-image: url(../img/beer.svg);
+}
+
+.fs-fields .fs-radio-custom label.radio-1-3::after {
+	background-image: url(../img/1-3.svg);
+}
+
+.fs-fields .fs-radio-custom label.radio-4-7::after {
+	background-image: url(../img/4-7.svg);
+}
+
+.fs-fields .fs-radio-custom label.radio-8-10::after {
+	background-image: url(../img/8-1.svg);
 }
 
 .fs-fields .fs-radio-custom label:hover::after,
@@ -627,7 +645,7 @@ button.fs-continue,
 }
 
 /* Continue button and submit button */
-button.fs-submit,
+a.fs-submit,
 button.fs-continue {
 	padding: 0.6em 1.5em;
 	border: 3px solid #232529;
@@ -655,8 +673,8 @@ button.fs-continue {
 	font-size: 1.25em;
 }
 
-button.fs-submit:hover,
-button.fs-submit:focus,
+a.fs-submit:hover,
+a.fs-submit:focus,
 button.fs-continue:hover {
 	background: #232529;
 	color: #fff;
@@ -879,7 +897,7 @@ input[type=text]::-ms-clear {
 		content: '';
 	}
 
-	button.fs-submit {
+	a.fs-submit {
 		width: 100%;
 		font-size: 1.25em;
 	}

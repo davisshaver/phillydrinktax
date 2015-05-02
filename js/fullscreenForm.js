@@ -29,6 +29,13 @@
 		return a;
 	}
 
+	function EncodeQueryData(data) {
+			   var ret = [];
+			   for (var d in data)
+			      ret.push(encodeURIComponent(d) + "=" + encodeURIComponent(data[d]));
+			   return ret.join("&");
+			}
+
 	/**
 	 * createElement function
 	 * creates an element with tag = tag, className = opt.cName, innerHTML = opt.inner and appends it to opt.appendTo
@@ -286,8 +293,18 @@
 					var markup = '<p>' + poison + '</p>' + '<p>' + quantity + '</p>';
 					$( markup ).insertBefore( "button.fs-submit" );
 
-
-
+					_gaq.push(['_trackEvent', 'Survey', 'Contribution', 'Dollar amount']);
+					_gaq.push(['_trackEvent', 'Survey', 'Quantity', quantity]);
+					_gaq.push(['_trackEvent', 'Survey', 'Type', poison]);
+					var data = {
+						'text': 'This is a tweet',
+						'url': 'http://www.phillydrinktax.com',
+						'via': 'beninphilly',
+						'related' : 'yiphilly,phillydotcom'
+					};
+					var querystring = EncodeQueryData(data);
+					var twitterurl = 'https://twitter.com/intent/tweet?' + querystring;
+					$("#submit").attr("href", twitterurl)
 					var utm;
 					var text;
 					var url;

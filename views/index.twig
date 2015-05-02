@@ -35,26 +35,26 @@
 
 					<p>We want people to think about their contribution, and brainstorm how we might fully fund the system.</p>
 				</div>
-				<form id="myform" method="post" class="fs-form fs-form-full" autocomplete="off">
+				<form id="myform" class="fs-form fs-form-full" autocomplete="off">
 					<ol class="fs-fields">
 						<li data-input-trigger>
 							<label class="fs-field-label fs-anim-upper" for="q2">What are you drinking?</label>
 							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
-								<span><input id="q1b" name="q1" type="radio" value="beer"/><label for="q1b" class="radio-conversion">Beer</label></span>
-								<span><input id="q1c" name="q1" type="radio" value="wine"/><label for="q1c" class="radio-social">Wine</label></span>
-								<span><input id="q1a" name="q1" type="radio" value="liquor"/><label for="q1a" class="radio-mobile">Liquor</label></span>
+								<span><input id="q1b" name="q1" type="radio" value="beer"/><label for="q1b" class="radio-beer">Beer</label></span>
+								<span><input id="q1c" name="q1" type="radio" value="wine"/><label for="q1c" class="radio-wine">Wine</label></span>
+								<span><input id="q1a" name="q1" type="radio" value="liquor"/><label for="q1a" class="radio-liquor">Liquor</label></span>
 							</div>
 						</li>
 						<li data-input-trigger>
 							<label class="fs-field-label fs-anim-upper" for="q1">How many drinks do you have out each week?</label>
 							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
-								<span><input id="q2b" name="q2" type="radio" value="1_3"/><label for="q2b" class="radio-conversion">1-3</label></span>
-								<span><input id="q2c" name="q2" type="radio" value="4_7"/><label for="q2c" class="radio-social">4-7</label></span>
-								<span><input id="q2a" name="q2" type="radio" value="8_10"/><label for="q2a" class="radio-mobile">8-10</label></span>
+								<span><input id="q2b" name="q2" type="radio" value="1_3"/><label for="q2b" class="radio-1-3"></label></span>
+								<span><input id="q2c" name="q2" type="radio" value="4_7"/><label for="q2c" class="radio-4-7"></label></span>
+								<span><input id="q2a" name="q2" type="radio" value="8_10"/><label for="q2a" class="radio-8-10"></label></span>
 							</div>
 						</li>
 					</ol><!-- /fs-fields -->
-					<button class="fs-submit" type="submit" href="#">Share your impact</button>
+					<a class="fs-submit" id="submit" href="#" onclick="_gaq.push(['_trackEvent','Outgoing link','Twitter'])" target="_new">Share your impact</a>
 				</form><!-- /fs-form -->
 			</div><!-- /fs-form-wrap -->
 
@@ -85,21 +85,21 @@
 				<p>In 2014, $60.5 million was collect from the liquor tax.</p>
 
 
-				<a href="http://tympanus.net/Development/ButtonComponentMorph/">
+				<a href="http://tympanus.net/Development/ButtonComponentMorph/" onclick="_gaq.push(['_trackEvent','Outgoing Link','#'])">
 					<img src="http://placehold.it/300x162" />
 					<h3>Related 1</h3>
 				</a>
-				<a href="http://tympanus.net/Development/MinimalForm/">
+				<a href="http://tympanus.net/Development/MinimalForm/" onclick="_gaq.push(['_trackEvent','Outgoing Link','#'])">
 					<img src="http://placehold.it/300x162" />
 					<h3>Related 1</h3>
 				</a>
-				<a href="http://tympanus.net/Development/ButtonComponentMorph/">
+				<a href="http://tympanus.net/Development/ButtonComponentMorph/" onclick="_gaq.push(['_trackEvent','Outgoing Link','#'])">
 					<img src="http://placehold.it/300x162" />
 					<h3>Related 1</h3>
 				</a>
 
 				<h3>Partners</h3>
-				<a href="http://tympanus.net/Development/MinimalForm/">
+				<a href="http://tympanus.net/Development/MinimalForm/" onclick="_gaq.push(['_trackEvent','Outgoing Link','#'])">
 					<img src="/wp-content/themes/drinktax/img/yip.jpeg" />
 				</a>
 			</div>
@@ -108,6 +108,19 @@
 
 		{{ wp_footer() }}
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-62497294-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
 
 		<script>
 			(function() {

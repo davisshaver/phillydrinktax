@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+<font horiz-adv-x="2048">
+<!-- Menlo is a Trademark of Apple Inc. -->
+<!-- Copyright: Copyright 2015 Adobe System Incorporated. All rights reserved. -->
+<font-face font-family="Menlo-Regular" units-per-em="2048" underline-position="-130" underline-thickness="90"/>
+<missing-glyph horiz-adv-x="1233" d="M104,-362l0,1806l1024,0l0,-1806M219,-248l795,0l0,1577l-795,0z"/>
+<glyph unicode="-" horiz-adv-x="1233" d="M102,724l1060,0l0,-169l-1060,0z"/>
+<glyph unicode="1" horiz-adv-x="1233" d="M270,169l314,0l0,1128l-376,-181l0,194l374,178l202,0l0,-1319l310,0l0,-169l-824,0z"/>
+<glyph unicode="3" horiz-adv-x="1233" d="M776,799C874,773 949,727 1001,661C1053,594 1079,511 1079,412C1079,275 1033,167 941,89C848,10 720,-29 557,-29C488,-29 418,-23 347,-10C276,3 206,21 137,45l0,201C205,211 272,184 338,167C404,150 470,141 535,141C646,141 731,166 790,216C849,266 879,338 879,432C879,519 849,588 790,639C731,690 650,715 549,715l-154,0l0,166l154,0C642,881 714,901 766,942C818,983 844,1039 844,1112C844,1189 820,1248 772,1289C723,1330 654,1350 565,1350C506,1350 444,1343 381,1330C318,1317 251,1297 182,1270l0,186C263,1477 335,1493 398,1504C461,1515 516,1520 565,1520C710,1520 827,1484 914,1411C1001,1338 1044,1241 1044,1120C1044,1038 1021,970 976,915C930,860 863,822 776,799z"/>
+</font>
+
+	<circle fill="#F2612A" cx="75" cy="75" r="73.6"/>
+<rect x="19" y="51.5" fill="none" width="112" height="47"/>
+<text transform="matrix(1 0 0 1 19 97.0879)" font-family="'Menlo-Regular'" font-size="60">1-3</text>
+</svg>
