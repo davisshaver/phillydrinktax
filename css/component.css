@@ -56,9 +56,13 @@
 	font-size: 1.2em;
 }
 
+.fs-form.fs-form-overview {
+	top: 0 !important;
+}
+
 .fs-form-overview .fs-fields::before {
 	display: block;
-	margin-bottom: 2.5em;
+	margin-bottom: 1em;
 	color: #3b3f45;
 	content: 'Your annual contribution';
 	font-weight: 700;
@@ -107,6 +111,7 @@ button.fs-continue,
 
 .no-js .fs-form-full .fs-fields > li {
 	visibility: visible;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .fs-show {
@@ -332,7 +337,7 @@ button.fs-continue,
 	width: 100%;
 	height: 100%;
 	background-position: 50% 0%;
-	background-size: 85%;
+	background-size: 95%;
 	background-repeat: no-repeat;
 	content: '';
 	opacity: 0.5;
@@ -798,6 +803,17 @@ input[type=text]::-ms-clear {
     display: none;
 }
 
+@media screen and (min-width: 0) and (max-width: 30em) {
+	.fs-form {
+		top: 9.75em !important;
+	}
+}
+
+@media screen and (min-width: 30em) and (max-width: 40em) {
+	.fs-form {
+		top: 8.75em !important;
+	}
+}
 /* Adjust form for smaller screens */
 @media screen and (max-width: 52.5em) {
 	body {
@@ -809,7 +825,7 @@ input[type=text]::-ms-clear {
 	}
 
 	.fs-form {
-		top: 7em;
+		top: 7.75em;
 		right: 2em;
 		left: 0;
 		padding: 0 1.75em 0 1em;
@@ -882,4 +898,8 @@ input[type=text]::-ms-clear {
 		-webkit-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
 	}
+}
+
+.fs-fields label {
+	color: white;
 }

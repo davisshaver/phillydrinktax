@@ -5,41 +5,90 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		{{ wp_head() }}
+		<title>Philly Drink Tax</title>
+		<link rel="apple-touch-icon" sizes="57x57" href="/wp-content/themes/drinktax/favicons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/wp-content/themes/drinktax/favicons/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/wp-content/themes/drinktax/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/wp-content/themes/drinktax/favicons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/wp-content/themes/drinktax/favicons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/wp-content/themes/drinktax/favicons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/wp-content/themes/drinktax/favicons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/wp-content/themes/drinktax/favicons/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/drinktax/favicons/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="/wp-content/themes/drinktax/favicons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="/wp-content/themes/drinktax/favicons/favicon-194x194.png" sizes="194x194">
+		<link rel="icon" type="image/png" href="/wp-content/themes/drinktax/favicons/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="/wp-content/themes/drinktax/favicons/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/wp-content/themes/drinktax/favicons/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="/wp-content/themes/drinktax/favicons/manifest.json">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="msapplication-TileImage" content="/wp-content/themes/drinktax/favicons/mstile-144x144.png">
+		<meta name="theme-color" content="#ffffff">
 	</head>
 	<body>
 		<div class="container">
 
 			<div class="fs-form-wrap" id="fs-form-wrap">
 				<div class="fs-title">
-					<h1>Philly Drink Tax</h1>
-					<p>There is a 10% tax on retail price of liquor, wine, and beer sold in the City of Philadelphia. 100% of the revenue from that tax goes to the School District of Philadelphia. In 2014, $60.5 million was collect from the liquor tax. What was your impact?</p>
+					<h1>10% of every drink sold in Philly goes to schools</h1>
+					<p>What's your impact? This tax provides about 2% of the school system's overall budget, which has been underfunded for x years.</p>
+
+					<p>We want people to think about their contribution, and brainstorm how we might fully fund the system.</p>
 				</div>
-				<form id="myform" action="http://requestb.in/xlfq20xl" method="post" class="fs-form fs-form-full" autocomplete="off">
+				<form id="myform" method="post" class="fs-form fs-form-full" autocomplete="off">
 					<ol class="fs-fields">
 						<li data-input-trigger>
-							<label class="fs-field-label fs-anim-upper" for="q2">Pick your poison.</label>
+							<label class="fs-field-label fs-anim-upper" for="q2">What are you drinking?</label>
 							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
-								<span><input id="q1b" name="q1" type="radio" value="conversion"/><label for="q1b" class="radio-conversion">Beer</label></span>
-								<span><input id="q1c" name="q1" type="radio" value="social"/><label for="q1c" class="radio-social">Wine</label></span>
-								<span><input id="q1a" name="q1" type="radio" value="mobile"/><label for="q1a" class="radio-mobile">Liquor</label></span>
+								<span><input id="q1b" name="q1" type="radio" value="beer"/><label for="q1b" class="radio-conversion">Beer</label></span>
+								<span><input id="q1c" name="q1" type="radio" value="wine"/><label for="q1c" class="radio-social">Wine</label></span>
+								<span><input id="q1a" name="q1" type="radio" value="liquor"/><label for="q1a" class="radio-mobile">Liquor</label></span>
 							</div>
 						</li>
 						<li data-input-trigger>
 							<label class="fs-field-label fs-anim-upper" for="q1">How many drinks do you have out each week?</label>
 							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
-								<span><input id="q2b" name="q2" type="radio" value="conversion"/><label for="q2b" class="radio-conversion">1-3</label></span>
-								<span><input id="q2c" name="q2" type="radio" value="social"/><label for="q2c" class="radio-social">4-7</label></span>
-								<span><input id="q2a" name="q2" type="radio" value="mobile"/><label for="q2a" class="radio-mobile">8-10</label></span>
+								<span><input id="q2b" name="q2" type="radio" value="1_3"/><label for="q2b" class="radio-conversion">1-3</label></span>
+								<span><input id="q2c" name="q2" type="radio" value="4_7"/><label for="q2c" class="radio-social">4-7</label></span>
+								<span><input id="q2a" name="q2" type="radio" value="8_10"/><label for="q2a" class="radio-mobile">8-10</label></span>
 							</div>
 						</li>
 					</ol><!-- /fs-fields -->
-					<button class="fs-submit" type="submit">Share your impact</button>
+					<button class="fs-submit" type="submit" href="#">Share your impact</button>
 				</form><!-- /fs-form -->
 			</div><!-- /fs-form-wrap -->
 
 			<!-- Related demos -->
 			<div class="related">
-				<p>Learn more:</p>
+				<h2>Overview</h2>
+				<p>The school district has a revenue of $2.76 billion.</p>
+				<h3>Revenue breakdown</h3>
+				<ul>
+					<li>$253 million Federal</li>
+					<li>$1.4 billion State</li>
+					<li>$ 1.074 billion City</li>
+						<ul>
+							<li>Taxes $897.6 million</li>
+							<li>Non tax $177 million</li>
+						</ul>
+				</ul>
+				<h3>City tax breakdown</h3>
+				<p>The liquor tax is one of 5 city taxes dedicated to the school district generating $897.6 million.</p>
+				<p>The taxes to the school district in order are:</p>
+				<ul>
+					<li>Real Estate 73%</li>
+					<li>Use and Occupancy 15%</li>
+					<li>Liquor 7%</li>
+					<li>School (non business) income 4%</li>
+					<li>Public Utility Realty < 1%</li>
+				</ul>
+				<p>In 2014, $60.5 million was collect from the liquor tax.</p>
+
+
+				<a href="http://tympanus.net/Development/ButtonComponentMorph/">
+					<img src="http://placehold.it/300x162" />
+					<h3>Related 1</h3>
+				</a>
 				<a href="http://tympanus.net/Development/MinimalForm/">
 					<img src="http://placehold.it/300x162" />
 					<h3>Related 1</h3>
@@ -48,11 +97,17 @@
 					<img src="http://placehold.it/300x162" />
 					<h3>Related 1</h3>
 				</a>
+
+				<h3>Partners</h3>
+				<a href="http://tympanus.net/Development/MinimalForm/">
+					<img src="/wp-content/themes/drinktax/img/yip.jpeg" />
+				</a>
 			</div>
 
 		</div><!-- /container -->
 
 		{{ wp_footer() }}
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 		<script>
 			(function() {

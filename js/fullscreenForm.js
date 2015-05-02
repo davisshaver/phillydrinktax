@@ -278,6 +278,23 @@
 					// replace class fs-form-full with fs-form-overview
 					classie.remove( self.formEl, 'fs-form-full' );
 					classie.add( self.formEl, 'fs-form-overview' );
+
+					console.log($( "input:checked" )[0].value );
+					console.log($( "input:checked" )[1].value );
+					var poison = $( "input:checked" )[0].value;
+					var quantity = $( "input:checked" )[1].value;
+					var markup = '<p>' + poison + '</p>' + '<p>' + quantity + '</p>';
+					$( markup ).insertBefore( "button.fs-submit" );
+
+
+
+					var utm;
+					var text;
+					var url;
+					var via;
+					var related;
+					var reply;
+
 					classie.add( self.formEl, 'fs-show' );
 					// callback
 					self.options.onReview();
