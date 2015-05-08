@@ -290,7 +290,7 @@
 					console.log($( "input:checked" )[1].value );
 					var poison = $( "input:checked" )[0].value;
 					var quantity = $( "input:checked" )[1].value;
-	
+
 					var figure_one;
 					var figure_two;
 					switch( poison ) {
@@ -322,7 +322,7 @@
 
 					_gaq.push(['_trackEvent', 'Survey', 'Contribution', contribution]);
 					_gaq.push(['_trackEvent', 'Survey', 'Quantity', quantity]);
-					_gaq.push(['_trackEvent', 'Survey', 'Quantity', quantity]);
+					_gaq.push(['_trackEvent', 'Survey', 'Drink Choice', poison]);
 
 					var utm;
 					var text;
