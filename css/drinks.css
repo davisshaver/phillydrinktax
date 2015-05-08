@@ -26,7 +26,6 @@ body {
 	font-family: 'Raleway', Arial, sans-serif;
 	overflow: hidden;
 	overflow-y: scroll;
-	min-height: 590px;
 }
 
 a {
@@ -98,21 +97,32 @@ a:hover, a:focus {
 	background: #fff;
 	color: rgba(0,0,0,0.3);
 }
-
+.related-content, ul, h3 {
+	max-width: 500px;
+	margin: auto;
+	color: white;
+}
+.call-to-action {
+	background-color: gray;
+	margin: 2em auto;
+	padding: 2em;
+}
+.call-to-action h2, .call-to-action h3 {
+	color: white;
+}
 .related p, ul, h2, h3 {
 	font-family: 'Raleway', Arial, sans-serif;
 	color: black;
 	margin: 1em auto;
-	max-width: 500px;
 	font-weight: 400;
 	text-align: left;
 }
 
-.related ul ul {
+.related-content ul ul {
 	margin: .5em auto;
 }
 
-.related a img {
+.related-content a img {
 	width: 100%;
 	height: auto;
 }
@@ -120,7 +130,7 @@ a:hover, a:focus {
 	display: block;
 }
 
-.related > a {
+.related-content > a {
 	border: 3px solid black;
 	border-color: initial;
 	display: block;
@@ -131,12 +141,16 @@ a:hover, a:focus {
 	max-width: 400px;
 }
 
+.related-content > a.no-styling {
+	border: none;
+	padding: 0;
+}
 .related > a:hover,
 .related > a:focus {
 	color: rgba(0,0,0,0.5);
 }
 
-.related a img {
+.related img {
 	max-width: 100%;
 	opacity: 0.8;
 }
@@ -159,4 +173,16 @@ a:hover, a:focus {
 
 input {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.call-to-action h2 {
+	margin: 1em 0;
+}
+
+.center {
+	text-align: center;
+}
+
+.limit-to-400 {
+	max-width: 150px !important;
 }

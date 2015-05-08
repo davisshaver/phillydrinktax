@@ -32,7 +32,7 @@
 	function EncodeQueryData(data) {
 			   var ret = [];
 			   for (var d in data)
-			      ret.push(encodeURIComponent(d) + "=" + encodeURIComponent(data[d]));
+				  ret.push(encodeURIComponent(d) + "=" + encodeURIComponent(data[d]));
 			   return ret.join("&");
 			}
 
@@ -62,8 +62,8 @@
 	function FForm( el, options ) {
 		this.el = el;
 		this.options = extend( {}, this.options );
-  		extend( this.options, options );
-  		this._init();
+		extend( this.options, options );
+		this._init();
 	}
 
 	/**
@@ -290,14 +290,49 @@
 					console.log($( "input:checked" )[1].value );
 					var poison = $( "input:checked" )[0].value;
 					var quantity = $( "input:checked" )[1].value;
-					var markup = '<p>' + poison + '</p>' + '<p>' + quantity + '</p>';
+	
+					var figure_one;
+					var figure_two;
+					switch( poison ) {
+						case 'wine':
+							figure_one = 8;
+							break;
+						case 'beer':
+							figure_one = 5;
+							break;
+						case 'liquor':
+							figure_one = 9;
+							break;
+					}
+					switch( quantity ) {
+						case '1_3':
+							figure_two = 2;
+							break;
+						case '4_7':
+							figure_two = 5;
+							break;
+						case '8_10':
+							figure_two = 9;
+							break;
+					}
+					var contribution;
+					contribution = Math.round( figure_one * figure_two * 52 * .1 );
+					var markup = '<h2>Annually, you contribute about $' + contribution + '.</h2><p><strong>But even with you and every other drinker in town, that amounts to only 2% of what the district needs.</strong> Talk about a proverbial drop of beer in the bucket.</p>';
 					$( markup ).insertBefore( "a.fs-submit" );
 
-					_gaq.push(['_trackEvent', 'Survey', 'Contribution', 'Dollar amount']);
+					_gaq.push(['_trackEvent', 'Survey', 'Contribution', contribution]);
 					_gaq.push(['_trackEvent', 'Survey', 'Quantity', quantity]);
-					_gaq.push(['_trackEvent', 'Survey', 'Type', poison]);
+					_gaq.push(['_trackEvent', 'Survey', 'Quantity', quantity]);
+
+					var utm;
+					var text;
+					var url;
+					var via;
+					var related;
+					var reply;
+					text = 'Philly Drink Tax - I contribute about $' + contribution + ' each year.'
 					var data = {
-						'text': 'This is a tweet',
+						'text': text,
 						'url': 'http://www.phillydrinktax.com',
 						'via': 'beninphilly',
 						'related' : 'yiphilly,phillydotcom'
@@ -305,12 +340,6 @@
 					var querystring = EncodeQueryData(data);
 					var twitterurl = 'https://twitter.com/intent/tweet?' + querystring;
 					$("#submit").attr("href", twitterurl);
-					var utm;
-					var text;
-					var url;
-					var via;
-					var related;
-					var reply;
 
 					classie.add( self.formEl, 'fs-show' );
 					// callback

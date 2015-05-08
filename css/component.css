@@ -20,14 +20,22 @@
 	width: 100%;
 }
 
+.fs-controls {
+	display: none;
+}
 @media screen and (min-width: 500px ) {
 	.fs-title p {
 
 	}
 }
 
-.fs-title h1 {
+.fs-title h1, h2 {
 	margin: 0;
+}
+
+.fs-title h2 {
+	color: white;
+	font-weight: 700;
 }
 
 /* Form */
@@ -43,7 +51,7 @@
 
 /* Views (fullscreen and overview)*/
 .fs-form-full {
-	top: 32%;
+	top: 35%;
 	margin: 0 auto;
 	width: 70%;
 }
@@ -70,7 +78,7 @@
 	display: block;
 	margin-bottom: 1em;
 	color: #3b3f45;
-	content: 'Your annual contribution';
+	content: 'Drink up!';
 	font-weight: 700;
 	font-size: 1.4em;
 }
@@ -189,7 +197,7 @@ button.fs-continue,
 
 .fs-fields > li label.fs-field-label {
 	display: inline-block;
-	padding: 0 5px 1em 0;
+	padding: 0 5px .5em 0;
 	font-weight: 700;
 	pointer-events: none;
 }
@@ -338,12 +346,12 @@ button.fs-continue,
 
 .fs-fields .fs-radio-custom label::after {
 	position: absolute;
-	top: 50%;
+	top: 60%;
 	left: 50%;
-	width: 100%;
-	height: 100%;
+	width: 140%;
+	height: 140%;
 	background-position: 50% 0%;
-	background-size: 95%;
+	background-size: 76%;
 	background-repeat: no-repeat;
 	content: '';
 	opacity: 0.5;
@@ -652,6 +660,7 @@ button.fs-continue {
 	border-radius: 40px;
 	font-weight: 700;
 	color: rgba(0,0,0,0.4);
+	text-align: center;
 }
 
 .fs-form-overview .fs-submit,
@@ -843,7 +852,7 @@ input[type=text]::-ms-clear {
 	}
 
 	.fs-form {
-		top: 7.75em;
+		top: 6.75em;
 		right: 2em;
 		left: 0;
 		padding: 0 1.75em 0 1em;
